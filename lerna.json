@@ -2,5 +2,17 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true
+    },
+    "publish": {
+      "contents": "dist",
+      "message": "chore(release): %s",
+      "registry": "http://localhost:4800",
+      "createRelease": "github"
+    }
+  }
 }
