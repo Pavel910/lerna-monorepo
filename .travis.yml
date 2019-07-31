@@ -10,7 +10,7 @@ before_install:
 - npm install -g npm
 install:
   - git remote rm origin
-  - git remote add origin https://Pavel910:[GH_TOKEN]@github.com/user-or-organisation/myrepo.git
+  - git remote add origin https://Pavel910:[GH_TOKEN]@github.com/Pavel910/lerna-monorepo.git
   - git checkout master
   - npm ci
   - lerna exec npm ci
