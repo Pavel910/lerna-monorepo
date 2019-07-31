@@ -6,11 +6,11 @@
   "command": {
     "version": {
       "allowBranch": "master",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "message": "chore(release): %s"
     },
     "publish": {
       "contents": "dist",
-      "message": "chore(release): %s",
       "registry": "http://localhost:4800",
       "createRelease": "github"
     }
