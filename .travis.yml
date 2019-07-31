@@ -9,10 +9,11 @@ branches:
 before_install:
 - npm install -g npm
 install:
-- git checkout master
-- npm ci
-- lerna exec npm ci
-- lerna link
+  - git remote set-url origin git@github.com:Pavel910/lerna-monorepo.git
+  - git checkout master
+  - npm ci
+  - lerna exec npm ci
+  - lerna link
 jobs:
   include:
   - stage: release
