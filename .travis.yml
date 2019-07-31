@@ -6,6 +6,8 @@ cache: npm
 branches:
   only:
     - master
+before_install:
+  - git checkout master
 install:
   - npm install
   - lerna exec npm install
