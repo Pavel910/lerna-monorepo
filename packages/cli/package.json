@@ -1,14 +1,14 @@
 {
   "name": "@webiny/cli",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist --source-maps --copy-files"
+    "build": "babel src -d dist --source-maps --copy-files && cp package.json dist"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5"
