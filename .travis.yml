@@ -17,5 +17,5 @@ jobs:
   include:
     - stage: release
       if: branch = "master" AND type = "push"
-      #script: lerna publish --skip-npm
-      script: lerna version
+      #script: lerna publish -y
+      script: lerna version -y
