@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Pavel910/lerna-monorepo/compare/@webiny/cli@1.1.0...@webiny/cli@1.2.0) (2019-07-31)
+
+
+### Features
+
+* add named export (closes [#1](https://github.com/Pavel910/lerna-monorepo/issues/1)) ([4e2014b](https://github.com/Pavel910/lerna-monorepo/commit/4e2014b))
+
+
+
+
+
 # [1.1.0](https://github.com/Pavel910/lerna-monorepo/compare/@webiny/cli@1.0.1...@webiny/cli@1.1.0) (2019-07-31)
 
 
