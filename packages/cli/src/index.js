@@ -2,10 +2,13 @@
  * Log message
  */
 const msg = "Webiny CLI";
-export default (print = true) => {
+
+export const logger = (print = true) => {
     if (print) {
         console.log(msg);
     }
 
     return msg;
 };
+
+export default logger;
