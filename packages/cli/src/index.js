@@ -11,4 +11,11 @@ export const logger = (print = true) => {
     return msg;
 };
 
+export const reverse = msg => {
+    return msg
+        .split("")
+        .reverse()
+        .join("");
+};
+
 export default logger;
