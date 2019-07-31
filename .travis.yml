@@ -9,8 +9,8 @@ branches:
 before_install:
   - git checkout master
 install:
-  - npm install
-  - lerna exec npm install
+  - npm ci
+  - lerna exec npm ci
   - lerna link
 jobs:
   include:
