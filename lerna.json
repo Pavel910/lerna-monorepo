@@ -7,7 +7,7 @@
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
-      "message": "chore(release): %s"
+      "message": "New release :tada: :rocket:"
     },
     "publish": {
       "contents": "dist",
