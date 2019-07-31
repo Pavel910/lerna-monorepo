@@ -7,8 +7,9 @@ branches:
   only:
     - master
 before_install:
-  - git checkout master
+  - npm install -g npm
 install:
+  - git checkout master
   - npm ci
   - lerna exec npm ci
   - lerna link
