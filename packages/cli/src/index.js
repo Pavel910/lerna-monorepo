@@ -1,6 +1,11 @@
 /**
  * Log message
  */
-export default () => {
-    console.log("Webiny CLI");
-}
+const msg = "Webiny CLI";
+export default (print = true) => {
+    if (print) {
+        console.log(msg);
+    }
+
+    return msg;
+};
