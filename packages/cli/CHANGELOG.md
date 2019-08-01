@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2019-08-01)
+
+
+### Bug Fixes
+
+* add jsdoc ([67ef8f5](https://github.com/Pavel910/lerna-monorepo/commit/67ef8f5))
+* update build script ([4335bdd](https://github.com/Pavel910/lerna-monorepo/commit/4335bdd))
+
+
+### Features
+
+* add function to reverse the given string. ([6ea07bf](https://github.com/Pavel910/lerna-monorepo/commit/6ea07bf))
+* add named export (closes [#1](https://github.com/Pavel910/lerna-monorepo/issues/1)) ([4e2014b](https://github.com/Pavel910/lerna-monorepo/commit/4e2014b))
+* add option to return the message instead of logging it. ([3194d67](https://github.com/Pavel910/lerna-monorepo/commit/3194d67))
+
+
+
+
+
 # [1.3.0](https://github.com/Pavel910/lerna-monorepo/compare/@webiny/cli@1.2.0...@webiny/cli@1.3.0) (2019-07-31)
 
 
