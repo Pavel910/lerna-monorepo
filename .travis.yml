@@ -1,24 +1,25 @@
 language: node_js
 sudo: false
 node_js:
-- '8.10'
+  - '8.10'
 cache: npm
 branches:
   only:
-  - master
+    - master
 before_install:
-- npm install -g npm
+  - npm install -g npm
 install:
-  - git remote set-url origin https://Pavel910@github.com/Pavel910/lerna-monorepo.git
+  - echo "> Before change"
+  - cat .git/config
+  - git remote add origin https://Pavel910:[GH_TOKEN]@github.com/Pavel910/lerna-monorepo.git
+  - echo "> After change"
+  - cat .git/config
   - git checkout master
   - npm ci
   - lerna exec npm ci
   - lerna link
 jobs:
   include:
-  - stage: release
-    if: branch = "master" AND type = "push"
-    script: lerna version -y
-env:
-  global:
-    secure: dCpJrVoWpxA1kZAYUjK5fRQjoseGUHaMBzc0cmYmEL5sjrVAZO7oyBOe/f71bdzYy5M5+X/Y4ObsBRJUqCl2fzoreiwoGPsTmuPlZk1xMUbDt3MnlmBH4/mQBck+fEKYPtPoQs9ud6tJwtmRi1YDI1wVTZgLDpZJIQqq/FaDZR1jImyTEnZfo1ZjyYvw1NF/H/5uUtlInS3nzydrDTIuizHUM20lGcX3y4ZmMkhT9DZWS49igDZDji1glTkJGDzgpwU+sLAD7niC59CgBr91weppzCVXrtnNmEzuoF8Q2K1EvFzJ35jn8Bo1zy35mtL4uLkm30JueXQBEOAVqu3JFebGdE47wGS3IlyXaB9Rr39Gv06+9amVNMnXN9Ncsb7jVyWeasZ4gUkNngcee53CO8OQnFVUF0ZY7gQAK0NOMXwuAiEXU2eTGXw4d0UX+pjaLDcv8T2uv/sXqdyB5VSinW0N+r+fFRvj/2TxKy81kMSVvR8PBbYv1O80ueizg369UYYot/2FmyZ26dE4PKMsFgPTq7pERvogs2aNV50X0fPt1ChwhI0w+CPF0EQU9VI7Qg2GV+Cg2OyZEWU9ux+/i5ZrPtoShePeNN+qD1NBY/g6v4SCTL4vuiup5ZitDJ4SjQcYURq4ewPoDVTIwGA2AlyCXuAguMpGokXNQ654kNw=
+    - stage: release
+      if: branch = "master" AND type = "push"
+      script: lerna version -y
