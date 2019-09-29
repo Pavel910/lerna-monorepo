@@ -1,10 +1,10 @@
 {
-  "name": "@webiny/cli",
-  "version": "1.1.1",
+  "name": "@pavel910/github-actions",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Tests are working!\"",
     "build": "babel src -d dist --source-maps --copy-files && cp package.json dist",
     "prepublishOnly": "npm run build"
   },

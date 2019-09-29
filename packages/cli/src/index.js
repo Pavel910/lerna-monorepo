@@ -1,7 +1,7 @@
 /**
  * Log message
  */
-const msg = "Webiny CLI";
+const msg = "A message!";
 
 export const logger = (print = true) => {
     if (print) {
